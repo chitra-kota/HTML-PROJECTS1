@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Iframe Project</title>
+    <title>Travel Destination Guide</title>
 </head>
 <body>
 
-<h1>Iframe Demo</h1>
+<h1>Travel Destination Guide</h1>
 
-<h2>Google Map</h2>
+<p>Choose a destination</p>
+
+<button>
+    <a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
+</button>
+
+<button>
+    <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a>
+</button>
+
+<button>
+    <a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a>
+</button>
+
+<hr>
+
+<h2>Location Preview</h2>
+
 <iframe 
-    src="https://www.google.com/maps?q=india&output=embed"
+    src="https://www.google.com/maps?q=paris&output=embed"
     width="400"
     height="300">
 </iframe>
 
 <hr>
 
-<h2>YouTube Video</h2>
-<iframe 
-    width="400"
-    height="250"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ">
-</iframe>
+<h2 id="contact">Contact Us</h2>
+
+<form>
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea rows="5" cols="30" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
 
 </body>
 </html>
