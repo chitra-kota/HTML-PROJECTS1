@@ -1,87 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Course Registration Form</title>
+    <title>Tables</title>
 </head>
-
 <body>
 
-<h1>Course Registration Form</h1>
+<h1>Student Details</h1>
 
-<form>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Year</th>
+    </tr>
+    <tr>
+        <td>Chitra Rekha</td>
+        <td>CSE</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Varshitha</td>
+        <td>IT</td>
+        <td>3</td>
+    </tr>
+</table>
 
-    <!-- First Name -->
-    <label for="fname">First Name:</label>
-    <input type="text" id="fname" name="fname" value="Chanti Chitra Rekha" required>
-    <br><br>
+<hr>
 
-    <!-- Surname -->
-    <label for="sname">Surname:</label>
-    <input type="text" id="sname" name="sname" value="Kota">
-    <br><br>
+<h2>Class Timetable</h2>
 
-    <!-- Mobile Number -->
-    <label for="mobile">Mobile Number:</label>
-    <input type="tel" id="mobile" name="mobile" value="7207157748" required>
-    <br><br>
-
-    <!-- Email -->
-    <label for="email">Email ID:</label>
-    <input type="email" id="email" name="email" value="kotachantichitrarekha@gmail.com" required>
-    <br><br>
-
-    <!-- Password -->
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" value="Chitra@123" required>
-    <br><br>
-
-    <!-- Confirm Password -->
-    <label for="cpassword">Confirm Password:</label>
-    <input type="password" id="cpassword" name="cpassword" value="Chitra@123" required>
-    <br><br>
-
-    <!-- Date of Birth -->
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob" value="2004-09-02">
-    <br><br>
-
-    <!-- Age -->
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" value="21" min="18" max="65">
-    <br><br>
-
-    <!-- Gender -->
-    <label>Gender:</label>
-    <input type="radio" id="female" name="gender" value="female" checked>
-    <label for="female">Female</label>
-
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
-
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label>
-    <br><br>
-
-    <!-- Country -->
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-        <option value="india" selected>India</option>
-        <option value="usa">USA</option>
-        <option value="germany">Germany</option>
-    </select>
-    <br><br>
-
-    <!-- Upload Resume -->
-    <label for="resume">Upload Resume:</label>
-    <input type="file" id="resume" name="resume">
-    <br><br>
-
-    <!-- Buttons -->
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-
-</form>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Day</th>
+        <th>9–10</th>
+        <th>10–11</th>
+        <th>11–12</th>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td rowspan="2">HTML</td>
+        <td>CSS</td>
+        <td>Java</td>
+    </tr>
+    <tr>
+        <td>Tuesday</td>
+        <td colspan="2">Python</td>
+    </tr>
+</table>
 
 </body>
 </html>
