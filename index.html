@@ -1,94 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Course Registration Form</title>
 </head>
 
 <body>
 
-    <h1>Kota Chanti Chitra Rekha</h1>
-    <p>Welcome to my portfolio website. Use the below navigation to explore.</p>
+<h1>Course Registration Form</h1>
 
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-            <a href="https://drive.google.com/file/d/147PS9jKf9Jpp7Oh7YcUVolQh2Pe55lL1/view"
-               target="_blank">
-               View Resume
-            </a>
-        </li>
-    </ul>
+<form>
 
-    <hr>
+    <!-- First Name -->
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" value="Chanti Chitra Rekha" required>
+    <br><br>
 
-    <h2 id="about">About Me</h2>
-    <p>
-        I am a Computer Science and Data Science student.
-        I am learning web development using HTML.
-    </p>
+    <!-- Surname -->
+    <label for="sname">Surname:</label>
+    <input type="text" id="sname" name="sname" value="Kota">
+    <br><br>
 
-    <p>
-        <a href="https://github.com/chitra-kota" target="_blank">
-            Visit my GitHub Profile
-        </a>
-    </p>
+    <!-- Mobile Number -->
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" value="7207157748" required>
+    <br><br>
 
-    <hr>
+    <!-- Email -->
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" value="kotachantichitrarekha@gmail.com" required>
+    <br><br>
 
-    <h2 id="skills">Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java</li>
-        <li>Python</li>
-    </ul>
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="Chitra@123" required>
+    <br><br>
 
-    <hr>
+    <!-- Confirm Password -->
+    <label for="cpassword">Confirm Password:</label>
+    <input type="password" id="cpassword" name="cpassword" value="Chitra@123" required>
+    <br><br>
 
-    <h2 id="projects">Projects</h2>
-    <ul>
-        <li>HTML Multimedia Web Page</li>
-        <li>HTML Portfolio Website</li>
-    </ul>
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" value="2004-09-02">
+    <br><br>
 
-    <hr>
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" value="21" min="18" max="65">
+    <br><br>
 
-    <h2 id="contact">Contact</h2>
-    <ul>
-        <li>
-            Email:
-            <a href="mailto:kotachantichitrarekha@gmail.com">
-                kotachantichitrarekha@gmail.com
-            </a>
-        </li>
-        <li>
-            Phone:
-            <a href="tel:7207157748">7207157748</a>
-        </li>
-        <li>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/chanti-chitra-rekha-kota-808320327/"
-               target="_blank">
-               View Profile
-            </a>
-        </li>
-    </ul>
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="female" name="gender" value="female" checked>
+    <label for="female">Female</label>
 
-    <hr>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
 
-    <p>
-        <a href="#top">Back to Top</a>
-    </p>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <br><br>
+
+    <!-- Country -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="india" selected>India</option>
+        <option value="usa">USA</option>
+        <option value="germany">Germany</option>
+    </select>
+    <br><br>
+
+    <!-- Upload Resume -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume">
+    <br><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
 
 </body>
 </html>
